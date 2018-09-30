@@ -18,7 +18,9 @@
 
 /*定义滑块 内阴影+圆角*/
 ::-webkit-scrollbar-thumb {
-    background-color:cyan;
+    /*background-color:cyan;*/
+    background-color:gray;
+
 }
 
 /*样式初始化*/
@@ -31,7 +33,8 @@ html {
 }
 body {
     font:14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-    background:url(../img/wave.png) #eee no-repeat;
+    /*background:url(../img/wave.png) #eee no-repeat;*/
+    background-color:#eaeaea;; 
     background-attachment:fixed
 }
 html.borderbox *, html.borderbox :after, html.borderbox :before {
@@ -120,13 +123,13 @@ p {
     font-size: 18px;
 }
 a, a:visited {
-    color: #08c;
+    color: #696969;
 }
 a:hover, a:focus {
     color: black;
 }
 a:active{
-    color:blue;
+    color: #696969;
 }
 a, a:visited ,a:hover, a:focus, a:active{
     text-decoration: none;
@@ -265,8 +268,8 @@ label{
     clear:both;
 }
 .post-container{
-    background: #FFF;
-    margin-bottom: 30px;
+    background: #fff;
+    /*margin-bottom: 30px;*/
     opacity: .8;
 }
 .panel p, li, .pull-right, h3 {
@@ -311,9 +314,9 @@ input#wp-submit {
     border-bottom: 1px solid whitesmoke;
     z-index: 4;
 }
-
 .header-menu {
-    margin-left: 35%;
+    /*margin-left: 35%;*/
+    margin:0 auto;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -326,32 +329,36 @@ input#wp-submit {
 
 /* 左边栏 */
 .leftbar {
+    padding-top: 30px;
     background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+   /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);*/
 }
 
-.left_menu ul li:hover {
+/*.left_menu ul li:hover {
     background:snow;
-}
+}*/
 
-.left_menu ul li i {
+/*.left_menu ul li i {
     color: #E3E7EA;
     background: #212124;
-}
+}*/
 
-.left_menu ul li i:hover {
+/*.left_menu ul li i:hover {
     color: #E3E7EA;
     background: #212124;
-}
+}*/
 
 .leftbar {
     position: fixed;
-    padding-top: 60px;
+  /*  padding-top: 60px;*/
     z-index: 2;
     top: 0;
     display: inline-block;
     height: 100%;
-    width: 50px;
+    /*width: 50px;*/
+    width:15%;
+    background-color:#fff; 
+
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
 }
@@ -360,7 +367,10 @@ input#wp-submit {
     clear: both;
     display: block;
 }
+.left_menu ul{
 
+    margin-top:40%;
+}
 .left_menu ul li a {
     display: block;
 }
@@ -434,6 +444,9 @@ input#wp-submit {
     padding-bottom: 20px;
 }
 /*content public style*/
+
+
+
 .page-title {
     margin-top: 20px;
     font-size: 20px;
@@ -444,13 +457,28 @@ input#wp-submit {
 }
 
 .post-container {
-    border-bottom: 1px dashed #cacaca;
+    /*border-bottom: 1px dashed #cacaca;*/
     padding: 30px
+    box-shadow: 0 2px 5px #ddd;
 }
+/*.post-container:hover{
+     box-shadow: 0 2px 5px #ddd;
+     }*/
+     .row-header{
+        padding: 10px 10px 10px 25px;
+         border-left:5px solid gray; 
+         height:50px;
+     }
 
-.post-container .post-title {
+     .row-footer{
+        padding: 15px 10px 10px 25px;
+        border-right:5px solid gray;  
+        height:50px; 
+
+     }
+.row-header .post-title {
     margin-bottom: 16px;
-    margin-top: 30px
+    /*margin-top: 30px*/
 }
 
 .post-container h1, .post-container h2, .post-container h3, .post-container h4, .post-container h5, .post-container h6 {
@@ -499,33 +527,36 @@ input#wp-submit {
     font-size: 13px
 }
 
-.post-container .meta-box {
+.row-footer .meta-box {
+    float: left;
     font-size: 13px;
     padding: 4px;
     border-left-color: #b02323;
-    line-height: 1
+    line-height: 1;
+     width:20%;
+    
 }
 
-.post-container .meta-box .cat-links {
-    color: #dd4814;
+.row-footer .meta-box .cat-links {
+    color: #696969;
     margin-right: 15px
 }
 
-.post-container .meta-box .cat-links b {
+.row-footer .meta-box .cat-links b {
     margin-right: 5px
 }
 
-.post-container .meta-box .tag-links {
-    color: #dd4814;
+.row-footer .meta-box .tag-links {
+    color: #696969;
     margin-right: 15px
 }
 
-.post-container .meta-box .tag-links b {
+.row-footer .meta-box .tag-links b {
     margin-right: 5px
 }
 
-.post-container .meta-box .m-post-date {
-    color: #dd4814;
+.row-footer .meta-box .m-post-date {
+    color: #696969;
     margin-right: 15px
 }
 
@@ -533,7 +564,9 @@ input#wp-submit {
     margin: 20px 0;
 }
 #main-container {
-    margin: 0 3% 0 28%;
+    /*margin: 0 3% 0 28%;*/
+    margin: 0 3% 0 18%;
+
 }
 .main-container .btn {
     text-indent: 0
